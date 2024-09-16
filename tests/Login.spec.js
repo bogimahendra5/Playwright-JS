@@ -22,5 +22,5 @@ test("Login Test Failed Username", async ({loginPage}) => {
 test("Login Test Failed Password", async ({loginPage}) => {
     await loginPage.LoginStep("standard_user", "secret_s");
     await expect(loginPage.errorMessage).toBeVisible();
-    await expect(loginPage.errorMessage).toContainText("Epic sadface: sername and password do not match any user in this service");
+    await expect(loginPage.errorMessage).toContainText("Epic sadface: Username and password do not match any user in this service");
 });

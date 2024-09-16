@@ -9,3 +9,4 @@ export class BasePage {
         this.page = page;
     }
 }
+
