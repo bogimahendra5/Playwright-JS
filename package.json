@@ -1,20 +1,29 @@
 {
-  "name": "playwright-js",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@playwright/test": "^1.47.1",
-    "@types/node": "^22.2.0",
-    "allure-commandline": "^2.30.0",
-    "allure-playwright": "^3.0.0-beta.10",
-    "playwright-bdd": "^7.4.0"
-  },
-  "dependencies": {
-    "@cucumber/cucumber": "^11.0.1"
-  }
+    "name": "playwright-js",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "cucumber-js test"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/cli": "^7.25.6",
+        "@babel/core": "^7.25.2",
+        "@babel/preset-env": "^7.25.4",
+        "@babel/register": "^7.24.6",
+        "@playwright/test": "^1.47.1",
+        "@types/node": "^22.5.5",
+        "allure-commandline": "^2.32.0",
+        "allure-playwright": "^3.0.6",
+        "playwright-bdd": "^7.4.0",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.6.2"
+    },
+    "dependencies": {
+        "@cucumber/cucumber": "^11.0.1"
+    }
 }

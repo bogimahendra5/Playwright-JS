@@ -1,6 +1,12 @@
 // @ts-check
-const {defineConfig, devices} = require("@playwright/test");
+import {defineConfig, devices} from "@playwright/test";
 import {testPlanFilter} from "allure-playwright/testplan";
+import {defineBddConfig} from 'playwright-bdd';
+
+// const testDir = defineBddConfig({
+//     paths: ['tests/features/*.feature'],
+//     require: ['tests/steps/*.js']
+// });
 
 /**
  * Read environment variables from file.
